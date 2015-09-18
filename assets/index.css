@@ -9,6 +9,86 @@ body{
 	box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
 }
 
+#main{
+	margin-top: 50px;
+	margin-bottom: 200px;
+}
+
+#main img{
+    width: 100%;
+}
+
+#main-links{
+	margin-top: 50px;
+	color: white;
+}
+
+#main-links h5{
+	font-weight: bold;
+    text-transform: uppercase;
+}
+
+#main-links > .col-md-6{
+    background: url('fondo_caja.jpg') no-repeat center;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    height: 170px;
+    border: 1px solid #30305A;
+}
+
+#main-links > .col-md-6:hover {
+	cursor: pointer;
+}
+
+#main-links > .col-md-6 .movable-left-box{
+    margin-left: 50%;
+	-moz-transition: all 0.3s ease-out;  /* FF4+ */
+    -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
+    -webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
+    -ms-transition: all 0.3s ease-out;  /* IE10 */
+    transition: all 0.3s ease-out;
+}
+
+
+
+#main-links > .col-md-6:hover .movable-left-box{
+    margin-left: 0%;
+	-moz-transition: all 0.3s ease-out;  /* FF4+ */
+    -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
+    -webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
+    -ms-transition: all 0.3s ease-out;  /* IE10 */
+    transition: all 0.3s ease-out;
+}
+
+#main-links > .col-md-6 .movable-right-box{
+    margin-left: 0%;
+	-moz-transition: all 0.3s ease-out;  /* FF4+ */
+    -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
+    -webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
+    -ms-transition: all 0.3s ease-out;  /* IE10 */
+    transition: all 0.3s ease-out;
+}
+
+
+
+#main-links > .col-md-6:hover .movable-right-box{
+    margin-left: 50%;
+	-moz-transition: all 0.3s ease-out;  /* FF4+ */
+    -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
+    -webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
+    -ms-transition: all 0.3s ease-out;  /* IE10 */
+    transition: all 0.3s ease-out;
+}
+
+#main-links > .col-md-6:hover svg{
+	visibility: hidden;
+}
+
+.movable-left-box, .movable-right-box{
+	height: 100%;
+	z-index: 10;
+}
+
 .logo img{
     max-height: 35px;
 }
