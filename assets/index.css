@@ -1,0 +1,25 @@
+body{
+	background: #E9E9E9;
+}
+
+#header {
+	background: #c33c1e;
+	color: #fff;
+	padding: 17px 0px; 
+	box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+}
+
+.logo img{
+    max-height: 35px;
+}
+
+.container{
+	max-width: 1024px;
+}
+
+@media (max-width: 768px) {
+	.logo{
+	    text-align: center;
+	    width: 100%;
+	}
+}
