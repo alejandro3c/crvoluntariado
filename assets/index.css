@@ -50,6 +50,17 @@ body{
 	margin-bottom: 20px;
 }
 
+.btn{
+    background: none;
+    border-radius: 0;
+    margin-top: 40px;
+    background-color: #c33c1e;
+}
+
+.btn:hover{
+	background-color: #E4411D;
+}
+
 #main img{
     width: 100%;
 }
