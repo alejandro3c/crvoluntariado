@@ -2,16 +2,48 @@ body{
 	background: #E9E9E9;
 }
 
-#header {
+#header, #footer {
 	background: #c33c1e;
 	color: #fff;
 	padding: 17px 0px; 
 	box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
 }
 
+ #footer{
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+ #footer a,  #footer a:visited,  #footer a:hover,  #footer a:focus{
+ 	color: white;
+ } 
+
+#social-media{
+	padding: 20px 0 40px 0;
+	font-weight: bold;
+	text-align: center;
+	background: white;
+}
+
+#social-media h3{
+	margin-bottom: 30px;
+}
+
+#social-media img{
+	margin: 0 10px;
+}
+
 #main{
 	margin-top: 50px;
-	margin-bottom: 200px;
+	margin-bottom: 50px;
+}
+
+#main-text{
+   	font-weight: bold;
+    text-align: center;
+    color: #6F6F6F;
+    font-family: cursive;    
 }
 
 .logo{
@@ -115,38 +147,157 @@ body{
 	max-width: 1024px;
 }
 
+/* Estéticas de color */
 .content-body{
-    margin-top: 50px;
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 60px;
 }
 
-/* Estéticas de color */
+.content-body img{
+	width: 100%;
+}
+
+.content-body h2{
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
 .fixed{
     background-color: black;
 }
 
 #promocion{
-    background-color: #222280;
+    background-color: #72A279;
+    color: black;
+    font-weight: bold;
 }
 
-#promocion-link .movable{ 
-    background-color: #222280;
+#promocion .embed-responsive{
+	margin-bottom: 20px;
 }
 
-#drogas{
-    background-color: #B52222;
+.promocion-link .movable{ 
+    background-color:  #72A279;
 }
 
-#drogas-link .movable{ 
-    background-color: #B52222;
+#salud{
+    background-color: #f9f7f8;
 }
 
-#drogas-link polygon{
-    fill: #B52222;
+.salud-link .movable{ 
+	color: black;
+    background-color: #f9f7f8;
 }
 
-@media (max-width: 768px) {
+.salud-link polygon{
+    fill: #f9f7f8;
+}
+
+#violencia{
+    background-color: #AAB3DA;
+}
+
+.violencia-link .movable{ 
+	color: black;
+    background-color: #AAB3DA;
+}
+
+.violencia-link polygon{
+    fill: #AAB3DA;
+}
+
+#infancia{
+    background-color: #F7DDBF;
+}
+
+.infancia-link .movable{ 
+	color: black;
+    background-color: #F7DDBF;
+}
+
+.infancia-link polygon{
+    fill: #F7DDBF;
+}
+
+#inmigrantes{
+    background-color: #E0F1FF;
+}
+
+.inmigrantes-link .movable{ 
+	color: black;
+    background-color: #E0F1FF;
+}
+
+.inmigrantes-link polygon{
+    fill: #E0F1FF;
+}
+
+#otro{
+    background-color: #FFE0E0;
+}
+
+.otro-link .movable{ 
+	color: black;
+    background-color: #FFE0E0;
+}
+
+.otro-link polygon{
+    fill: #FFE0E0;
+}
+
+#main-links-mobile{
+	color: white;
+	text-align: center;
+}
+
+@media (max-width: 991px) {
 	.cr-logo{
 	    text-align: center;
 	    width: 100%;
+	}
+
+	#main{
+		margin-top: 20px;
+	    margin-bottom: 20px;
+	}
+
+	#main-text{
+		margin-top: 20px;
+	}
+
+	.link{
+	    padding-top: 10px;
+    	padding-bottom: 10px;
+		color: black;
+	}
+
+	.link h5{
+		margin: 0;
+	}
+
+	.promocion-link{ 
+    	background-color:  #72A279;
+	}
+	
+	.salud-link{ 
+	    background-color: #f9f7f8;
+	}
+
+	.violencia-link{
+    	background-color: #AAB3DA;
+	}
+
+	.infancia-link{ 
+	    background-color: #F7DDBF;
+	}
+
+	.inmigrantes-link{
+    	background-color: #E0F1FF;
+	}
+
+	.otro-link{
+    	background-color: #FFE0E0;
 	}
 }
