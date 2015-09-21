@@ -53,8 +53,6 @@ body{
     transition: all 0.3s ease-out;
 }
 
-
-
 #main-links > .col-md-6:hover .movable-left-box{
     margin-left: 0%;
 	-moz-transition: all 0.3s ease-out;  /* FF4+ */
@@ -73,11 +71,27 @@ body{
     transition: all 0.3s ease-out;
 }
 
-
-
 #main-links > .col-md-6:hover .movable-right-box{
     margin-left: 50%;
 	-moz-transition: all 0.3s ease-out;  /* FF4+ */
+    -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
+    -webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
+    -ms-transition: all 0.3s ease-out;  /* IE10 */
+    transition: all 0.3s ease-out;
+}
+
+#main-links > .col-md-6 .movable-up-box{
+    height: 100%;
+    -moz-transition: all 0.3s ease-out;  /* FF4+ */
+    -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
+    -webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
+    -ms-transition: all 0.3s ease-out;  /* IE10 */
+    transition: all 0.3s ease-out;
+}
+
+#main-links > .col-md-6:hover .movable-up-box{
+    height: 0%;
+    -moz-transition: all 0.3s ease-out;  /* FF4+ */
     -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
     -webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
     -ms-transition: all 0.3s ease-out;  /* IE10 */
@@ -88,7 +102,7 @@ body{
 	visibility: hidden;
 }
 
-.movable-left-box, .movable-right-box{
+.movable-left-box, .movable-right-box, .movable-up-box, .movable-down-box{
 	height: 100%;
 	z-index: 10;
 }
@@ -99,6 +113,35 @@ body{
 
 .container{
 	max-width: 1024px;
+}
+
+.content-body{
+    margin-top: 50px;
+}
+
+/* Estéticas de color */
+.fixed{
+    background-color: black;
+}
+
+#promocion{
+    background-color: #222280;
+}
+
+#promocion-link .movable{ 
+    background-color: #222280;
+}
+
+#drogas{
+    background-color: #B52222;
+}
+
+#drogas-link .movable{ 
+    background-color: #B52222;
+}
+
+#drogas-link polygon{
+    fill: #B52222;
 }
 
 @media (max-width: 768px) {
