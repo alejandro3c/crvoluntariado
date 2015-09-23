@@ -161,7 +161,7 @@ body{
     color: #333333;
 }
 
-#salud .project-text{
+#salud .project-text, #violencia .project-text{
     margin-top: 30px;
 }
 
@@ -325,6 +325,11 @@ body{
     background-color: #AAB3DA;
 }
 
+.violencia-link{
+    background: url('crj-prevencion-violencia-small.png') no-repeat left top;
+    background-size: contain;
+}
+
 .violencia-link .movable, .violencia-link .fixed{ 
 	color: black;
     background-color: #AAB3DA;
@@ -338,6 +343,10 @@ body{
     background-color: #F7DDBF;
 }
 
+#carousel-example-generic{
+    margin-bottom: 20px;
+}
+
 .infancia-link .movable, .infancia-link .fixed{
 	color: black;
     background-color: #F7DDBF;
@@ -345,6 +354,11 @@ body{
 
 .infancia-link polygon{
     fill: #F7DDBF;
+}
+
+.infancia-link{
+    background: url('infancia-intervencion.jpg') no-repeat top left white;
+    background-size: contain;
 }
 
 #inmigrantes{
@@ -397,6 +411,10 @@ body{
         margin-top: 20px;
     }
 
+    .divider{
+        height: 50px;
+    }
+
 	.link{
 	    padding-top: 10px;
     	padding-bottom: 10px;
@@ -434,4 +452,8 @@ body{
 	.otro-link{
     	background: #FFE0E0;
 	}
+
+    #violencia .pull-right{
+        margin-bottom: 20px;
+    }
 }
