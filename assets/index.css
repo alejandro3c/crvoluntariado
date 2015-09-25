@@ -42,8 +42,11 @@ body{
 #main-text{
    	font-weight: bold;
     text-align: center;
-    color: #6F6F6F;
-    font-family: cursive;    
+    color: #6F6F6F;  
+}
+
+p{
+    font-family: 'Open Sans';  
 }
 
 .logo{
@@ -66,6 +69,8 @@ body{
 }
 
 #main-links{
+    margin-left: 0;
+    margin-right: 0;
 	margin-top: 50px;
 	color: white;
 }
@@ -78,14 +83,31 @@ body{
 #main-links > .col-md-6{
     /* background-repeat: no-repeat; */
     height: 170px;
-    border: 1px solid #30305A;
+ /*   border: 1px solid #30305A;*/
 }
 
 #main-links > .col-md-6:hover {
 	cursor: pointer;
 }
 
-#main-links > .col-md-6 .movable-left-box{
+#main-links > .col-md-6 .movable-left-box .fixed{
+    position: absolute; top: 0; right: 0;
+}
+
+#main-links > .col-md-6 .movable-right-box .fixed{
+    position: absolute; top: 0; left: 0;
+}
+
+#main-links > .col-md-6 .movable-left-box svg{
+    position: absolute; top: 40%; left: -25px; transform: rotate(180deg);
+}
+
+#main-links > .col-md-6 .movable-right-box svg{
+    position: absolute; top: 40%; right: -25px; transform: rotate(0);
+}
+
+#main-links > .col-md-6 .movable-left-box .movable{
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
     margin-left: 50%;
 	-moz-transition: all 0.3s ease-out;  /* FF4+ */
     -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
@@ -94,18 +116,20 @@ body{
     transition: all 0.3s ease-out;
 }
 
-#main-links > .col-md-6:hover .movable-left-box{
+#main-links > .col-md-6:hover .movable-left-box .movable{
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
     margin-left: 0%;
 	-moz-transition: all 0.3s ease-out;  /* FF4+ */
     -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
     -webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
     -ms-transition: all 0.3s ease-out;  /* IE10 */
     transition: all 0.3s ease-out;
-    border-right: 1px solid black;
+ /*   border-right: 1px solid black;*/
 }
 
-#main-links > .col-md-6 .movable-right-box{
+#main-links > .col-md-6 .movable-right-box .movable{
     margin-left: 0%;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);    
 	-moz-transition: all 0.3s ease-out;  /* FF4+ */
     -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
     -webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
@@ -113,14 +137,14 @@ body{
     transition: all 0.3s ease-out;
 }
 
-#main-links > .col-md-6:hover .movable-right-box{
+#main-links > .col-md-6:hover .movable-right-box .movable{
     margin-left: 50%;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);    
 	-moz-transition: all 0.3s ease-out;  /* FF4+ */
     -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
     -webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
     -ms-transition: all 0.3s ease-out;  /* IE10 */
     transition: all 0.3s ease-out;
-    border-left: 1px solid black;
 }
 
 #main-links > .col-md-6 .movable-up-box{
@@ -136,7 +160,7 @@ body{
 	visibility: hidden;
 }
 
-.movable-left-box, .movable-right-box, .movable-up-box, .movable-down-box{
+.movable-left-box .movable, .movable-right-box .movable, .movable-up-box .movable, .movable-down-box .movable{
 	height: 100%;
 	z-index: 10;
 }
@@ -154,7 +178,7 @@ body{
 }
 
 .project-text{
-    font-family: 'Lucida Grande', cursive;
+    /*font-family: 'Lucida Grande', cursive;*/
     text-align: center;
     font-size: 14px;
     font-weight: bold;
@@ -307,9 +331,8 @@ body{
     background-color: #f9f7f8;
 }
 
-
 .salud-link{
-    background: url('crj-educacion-salud-small.png') no-repeat center left;
+    background: url('crj-educacion-salud-small.png') no-repeat center right;
 }
 
 .salud-link .movable, .salud-link .fixed{ 
@@ -326,7 +349,7 @@ body{
 }
 
 .violencia-link{
-    background: url('crj-prevencion-violencia-small.png') no-repeat left top;
+    background: url('crj-prevencion-violencia-small.png') no-repeat right top;
     background-size: contain;
 }
 
@@ -341,6 +364,10 @@ body{
 
 #infancia{
     background-color: #F7DDBF;
+}
+
+#infancia .btn{
+    margin-top: 15px;
 }
 
 #carousel-example-generic{
@@ -370,20 +397,85 @@ body{
     background-color: #E0F1FF;
 }
 
+.inmigrantes-link{
+    background: url('intervencion-cultura-small.jpg') no-repeat center left;
+    background-size: contain;
+}
+
 .inmigrantes-link polygon{
     fill: #E0F1FF;
 }
 
-#otro{
+#informatica{
+    background-color: #E0F1FF;
+}
+
+.informatica-link .movable, .informatica-link .fixed{ 
+    color: black;
+    background-color: #E0F1FF;
+}
+
+.informatica-link{
+    background: url('intervencion-informatica-small.jpg') no-repeat center right;
+    background-size: contain;
+}
+
+.informatica-link polygon{
+    fill: #E0F1FF;
+}
+
+
+#competencias{
+    background-color: #E0F1FF;
+}
+
+.competencias-link .movable, .competencias-link .fixed{ 
+    color: black;
+    background-color: #E0F1FF;
+}
+
+.competencias-link{
+    background: url('intervencion-competencias-small.jpg') no-repeat center right;
+    background-size: contain;
+}
+
+.competencias-link polygon{
+    fill: #E0F1FF;
+}
+
+#alfabetizacion{
     background-color: #FFE0E0;
 }
 
-.otro-link .movable, .otro-link .fixed{ 
+.alfabetizacion-link{
+    background: url('intervencion-alfabetizacion-small.jpg') no-repeat center left;
+    background-size: contain;
+}
+
+.alfabetizacion-link .movable, .alfabetizacion-link .fixed{ 
 	color: black;
     background-color: #FFE0E0;
 }
 
-.otro-link polygon{
+.alfabetizacion-link polygon{
+    fill: #FFE0E0;
+}
+
+#salud-constante{
+    background-color: #FFE0E0;
+}
+
+.salud-constante-link{
+    background: url('salud-constante-small.png') no-repeat center left white;
+    background-size: contain;
+}
+
+.salud-constante-link .movable, .salud-constante-link .fixed{ 
+    color: black;
+    background-color: #FFE0E0;
+}
+
+.salud-constante-link polygon{
     fill: #FFE0E0;
 }
 
@@ -449,11 +541,20 @@ body{
     	background: #E0F1FF;
 	}
 
-	.otro-link{
+	.alfabetizacion-link{
     	background: #FFE0E0;
 	}
+
+    .informatica-link{
+        background: #FFE0E0;
+    }
+
+    .competencias-link{
+        background: #FFE0E0;
+    }        
 
     #violencia .pull-right{
         margin-bottom: 20px;
     }
+
 }
