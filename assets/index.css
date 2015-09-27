@@ -395,7 +395,7 @@ p{
 }
 
 .violencia-link{
-    background: url('crj-prevencion-violencia-small.png') no-repeat right top;
+    background: url('crj-prevencion-violencia-small.jpg') no-repeat right top;
     background-size: contain;
 }
 
@@ -492,7 +492,7 @@ p{
 }
 */
 .salud-constante-link{
-    background: url('salud-constante-small.png') no-repeat center right white;
+    background: url('salud-constante-small.jpg') no-repeat center right white;
     background-size: contain;
 }
 
@@ -511,7 +511,7 @@ p{
 */
 
 .socorros-link{
-    background: url('socorros-small.png') no-repeat center left #FFC996;
+    background: url('socorros-small.jpg') no-repeat center left #FFC996;
     background-size: contain;
 }
 
