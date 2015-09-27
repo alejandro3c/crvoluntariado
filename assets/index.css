@@ -83,8 +83,12 @@ p{
 
 #main-links > div{
     /* background-repeat: no-repeat; */
-    height: 170px;
+    height: 150px;
  /*   border: 1px solid #30305A;*/
+}
+
+.alfabetizacion-link .fixed{
+    padding-top: 5px;
 }
 
 #main-links > div:hover {
@@ -429,7 +433,7 @@ p{
 }
 
 .infancia-link{
-    background: url('infancia-intervencion.jpg') no-repeat top left white;
+    background: url('infancia-intervencion.jpg') no-repeat top left #FFC444;
     background-size: contain;
 }
 
@@ -458,7 +462,7 @@ p{
 }
 
 .competencias-link{
-    background: url('intervencion-competencias-small.jpg') no-repeat center left;
+    background: url('intervencion-competencias-small.jpg') no-repeat center left #9DB0FF;
     background-size: contain;
 }
 
@@ -490,6 +494,10 @@ p{
 .salud-constante-link{
     background: url('salud-constante-small.png') no-repeat center right white;
     background-size: contain;
+}
+
+#salud-constante .project-text, #competencias .project-text{
+    margin-top: 70px;
 }
 /*
 .salud-constante-link .movable, .salud-constante-link .fixed{ 
@@ -571,6 +579,14 @@ p{
 
     #violencia .pull-right{
         margin-bottom: 20px;
+    }
+
+    #promocion .embed-responsive, #socorros .embed-responsive {
+        margin-bottom: 0;
+    }
+
+    #salud-constante .project-text, #competencias .project-text, .project-text{
+        margin-top: 20px;
     }
 
 }
